@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Tag;
 
 import Code.Calculator;
 
@@ -12,6 +13,8 @@ public class CalculatorTest {
 
 	@DisplayName("Add two positive numbers Test")
 	@Test
+	@Tag("Sanity")
+	@Tag("Regression")
 	public void test1()
 	{
 		int result = Calculator.add(78, 23);
@@ -29,6 +32,7 @@ public class CalculatorTest {
 	
 	@DisplayName("Add two positive numbers where result is not matching Test")
 	@Test
+	@Tag("Regression")
 	public void test3()
 	{
 		int result = Calculator.add(54, 20);

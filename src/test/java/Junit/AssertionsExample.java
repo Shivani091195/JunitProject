@@ -2,11 +2,13 @@ package Junit;
 
 import java.util.ArrayList;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class AssertionsExample {
 	
 	@Test
+	@Tag("Regression")
 	public void test1()
 	{
 		String str1 = "Simplilearn";
